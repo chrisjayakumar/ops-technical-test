@@ -1,4 +1,4 @@
-docker run --publish 8090:8090 myob# Demo Application
+# Demo Application
 
 Run the app using the docker command `mvn install && docker build -t myob . && docker run --publish 8090:8090 myob`
 
