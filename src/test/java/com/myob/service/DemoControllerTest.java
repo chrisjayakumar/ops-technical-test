@@ -34,6 +34,6 @@ public class DemoControllerTest {
 	@Test
     public void testRandomMessage() {
 		Message message = demoController.sayHello(Mockito.anyString());
-		assertEquals(TEST_STRING, message.getMessage());
+		assertEquals(TEST_STRING, message.getData());
     }
 }

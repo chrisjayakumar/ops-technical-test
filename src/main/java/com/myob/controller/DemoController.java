@@ -18,7 +18,7 @@ public class DemoController {
 	@GetMapping("/random")
     public Message sayHello(@RequestParam(required = true) String message) {
 		Message messageObj = new Message();
-		messageObj.setMessage(message.isEmpty() ? rootMessage() : message);
+		messageObj.setData(message.isEmpty() ? rootMessage() : message);
 		return messageObj;
     }
 	
